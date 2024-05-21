@@ -1,8 +1,25 @@
 
 public class Television {
 	private int channel;
-	public int volume;
-	public boolean onOff;
+	private int volume;
+	private boolean onOff;
+	
+	//생성자  오버로딩
+	public Television() {
+		this(1,1,false);
+	}
+	
+	public Television(int c) {
+		this(c,1,false);
+	}
+	
+	//생성자
+	public Television(int c, int v, boolean o) {
+		this.channel = c;
+		this.volume = v;
+		this.onOff = o;
+		
+	}
 	
 	
 	void print() {
@@ -16,4 +33,4 @@ public class Television {
 		//if(newChannel)
 		//channel = newChannel;
 	}
-}
+} 

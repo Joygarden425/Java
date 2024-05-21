@@ -16,7 +16,7 @@ public class SafeArray {
 		
 	}
 	public void put(int index, int value) {
-		if(index>length&&index<length) {
+		if(index>=0&&index<length) {
 			a[index]=value;
 		}
 		else {
