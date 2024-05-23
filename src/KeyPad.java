@@ -1,12 +1,9 @@
-import java.awt.Dimension;
-import java.awt.Toolkit;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.*;
 
 public class KeyPad extends JFrame implements ActionListener {
-	
 	
 	private int[] button;
 	public KeyPad() {
@@ -19,12 +16,9 @@ public class KeyPad extends JFrame implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		for(int i =0; i<9; i++) {
-			if(e.getSource()==button[1])
+			if(e.getSource().equals(button[1]))
 				System.out.println("클릭1");
 		}
 	}
-	
-	
-	
 
 }
